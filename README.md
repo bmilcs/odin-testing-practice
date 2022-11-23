@@ -19,4 +19,7 @@ Welcome to Bryan Miller's Testing Practice Project, the [seventeenth assignment]
 ```sh
 # clone repo
 git clone https://github.com/bmilcs/odin-testing-practice
+
+# install dependencies
+npm install --save-dev babel-jest @babel/core @babel/preset-env
 ```
