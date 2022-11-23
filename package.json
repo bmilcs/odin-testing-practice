@@ -1,0 +1,26 @@
+{
+  "name": "odin-testing-practice",
+  "version": "1.0.0",
+  "description": "Welcome to Bryan Miller's Testing Practice Project, the [seventeenth assignment](https://www.theodinproject.com/lessons/node-path-javascript-testing-practice) within the Odin Project curriculum. The goal of this repo is to practice the following skill sets:",
+  "main": "babel.config.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmilcs/odin-testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmilcs/odin-testing-practice/issues"
+  },
+  "homepage": "https://github.com/bmilcs/odin-testing-practice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1"
+  }
+}
