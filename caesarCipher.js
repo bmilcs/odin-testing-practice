@@ -13,7 +13,7 @@ export default function caesarCipher(string, shift = 23) {
       // if letter + shift beyond the bounds of lowercase charCodes
       if (newCharCode > 122) {
         // wrap letters extending beyond 122, starting at 97
-        let shiftRemainder = newCharCode - 123;
+        const shiftRemainder = newCharCode - 123;
         newCharCode = 97 + shiftRemainder;
       }
     }
@@ -24,7 +24,7 @@ export default function caesarCipher(string, shift = 23) {
       // if new char code is beyond the bounds of lowercase charCodes
       if (newCharCode > 90) {
         // wrap letters extending beyond 90, starting at 65
-        let shiftRemainder = newCharCode - 91;
+        const shiftRemainder = newCharCode - 91;
         newCharCode = 65 + shiftRemainder;
       }
     }
