@@ -5,10 +5,16 @@ Welcome to Bryan Miller's Testing Practice Project, the [seventeenth assignment]
 - Vanilla JavaScript
 - Test Driven Development
 - Jest
+- NPM
+- Babel
 
 ## Summary
 
+Not much to say about this one other than it was quick and fun. The benefits of test driven development are undeniable and I'm excited to take advantage of them in the next project.
+
 ## Screenshots
+
+![Screenshot](./img/screenshot.png)
 
 ## Links
 
