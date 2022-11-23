@@ -1,6 +1,7 @@
 import capitalize from "./capitalize";
 import reverseString from "./reverseString";
 import calculator from "./calculator";
+import caesarCipher from "./caesarCipher";
 
 test("capitalize: basketball", () => {
   expect(capitalize("basketball")).toStrictEqual("Basketball");
@@ -32,4 +33,22 @@ test("calculator: multiply 10, 5", () => {
 
 test("calculator: divide 100, 5", () => {
   expect(calculator.divide(100, 5)).toStrictEqual(20);
+});
+
+test("caesar cipher: THE", () => {
+  expect(caesarCipher("THE")).toStrictEqual("QEB");
+});
+
+test("caesar cipher: QUICK", () => {
+  expect(caesarCipher("QUICK")).toStrictEqual("NRFZH");
+});
+
+test("caesar cipher: BROWN FOX", () => {
+  expect(caesarCipher("BROWN FOX")).toStrictEqual("YOLTK CLU");
+});
+
+test("caesar cipher: JUMPS OVER THE LAZY DOG", () => {
+  expect(caesarCipher("JUMPS OVER THE LAZY DOG")).toStrictEqual(
+    "GRJMP LSBO QEB IXWV ALD"
+  );
 });
