@@ -2,6 +2,7 @@ import capitalize from "./capitalize";
 import reverseString from "./reverseString";
 import calculator from "./calculator";
 import caesarCipher from "./caesarCipher";
+import analyzeArray from "./analyzeArray";
 
 test("capitalize: basketball", () => {
   expect(capitalize("basketball")).toStrictEqual("Basketball");
@@ -51,4 +52,20 @@ test("caesar cipher: JUMPS OVER THE LAZY DOG", () => {
   expect(caesarCipher("JUMPS OVER THE LAZY DOG")).toStrictEqual(
     "GRJMP LSBO QEB IXWV ALD"
   );
+});
+
+test("analyze array .min: [1,2,3,4,5]", () => {
+  expect(analyzeArray([1, 2, 3, 4, 5]).min).toStrictEqual(1);
+});
+
+test("analyze array .max: [1,2,3,4,5]", () => {
+  expect(analyzeArray([1, 2, 3, 4, 5]).max).toStrictEqual(5);
+});
+
+test("analyze array .average: [1,2,3,4,5]", () => {
+  expect(analyzeArray([1, 2, 3, 4, 5]).average).toStrictEqual(7.5);
+});
+
+test("analyze array .length: [1,2,3,4,5]", () => {
+  expect(analyzeArray([1, 2, 3, 4, 5]).length).toStrictEqual(5);
 });
