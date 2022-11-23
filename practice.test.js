@@ -44,6 +44,10 @@ test("caesar cipher: QUICK", () => {
   expect(caesarCipher("QUICK")).toStrictEqual("NRFZH");
 });
 
+test("caesar cipher: QUICK!.", () => {
+  expect(caesarCipher("QUICK!.")).toStrictEqual("NRFZH!.");
+});
+
 test("caesar cipher: BROWN FOX", () => {
   expect(caesarCipher("BROWN FOX")).toStrictEqual("YOLTK CLU");
 });
