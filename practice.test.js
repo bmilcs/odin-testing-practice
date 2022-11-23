@@ -58,14 +58,30 @@ test("analyze array .min: [1,2,3,4,5]", () => {
   expect(analyzeArray([1, 2, 3, 4, 5]).min).toStrictEqual(1);
 });
 
+test("analyze array .min: [100,20,30,40,50]", () => {
+  expect(analyzeArray([100, 20, 30, 40, 50]).min).toStrictEqual(20);
+});
+
 test("analyze array .max: [1,2,3,4,5]", () => {
   expect(analyzeArray([1, 2, 3, 4, 5]).max).toStrictEqual(5);
 });
 
+test("analyze array .max: [100,20,30,40,50]", () => {
+  expect(analyzeArray([100, 20, 30, 40, 50]).max).toStrictEqual(100);
+});
+
 test("analyze array .average: [1,2,3,4,5]", () => {
-  expect(analyzeArray([1, 2, 3, 4, 5]).average).toStrictEqual(7.5);
+  expect(analyzeArray([1, 2, 3, 4, 5]).average).toStrictEqual(3);
+});
+
+test("analyze array .average: [100,20,30,40,50]", () => {
+  expect(analyzeArray([100, 20, 30, 40, 50]).average).toStrictEqual(48);
 });
 
 test("analyze array .length: [1,2,3,4,5]", () => {
   expect(analyzeArray([1, 2, 3, 4, 5]).length).toStrictEqual(5);
+});
+
+test("analyze array .length: [100,20,30,40,50]", () => {
+  expect(analyzeArray([100, 20, 30, 40, 50]).length).toStrictEqual(5);
 });
