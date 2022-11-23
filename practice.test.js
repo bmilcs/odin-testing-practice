@@ -1,8 +1,8 @@
-import capitalize from "./capitalize";
-import reverseString from "./reverseString";
-import calculator from "./calculator";
-import caesarCipher from "./caesarCipher";
-import analyzeArray from "./analyzeArray";
+import capitalize from "./modules/capitalize";
+import reverseString from "./modules/reverseString";
+import calculator from "./modules/calculator";
+import caesarCipher from "./modules/caesarCipher";
+import analyzeArray from "./modules/analyzeArray";
 
 test("capitalize: basketball", () => {
   expect(capitalize("basketball")).toStrictEqual("Basketball");
